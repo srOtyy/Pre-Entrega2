@@ -1,0 +1,316 @@
+:root{
+    --color-oscuro1:#003C43;
+    --color-oscuro0:#135D66;
+    --color-claro0: #77B0AA;
+    --color-claro1: #E3FEF7;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(230, 225, 225);
+    margin:0;
+    padding: 0;
+    height: auto;
+}
+/* ----- HEADER ----- */
+.header__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+.header__nav {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(2px);
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding: 30px 40px;
+    font-family: helvetica;
+    animation:header-animation both;
+    animation-timeline: scroll();
+    animation-range:10px 350px ;
+    
+}
+
+.header__nav-link{
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.7em;
+    animation:header-animation-links both;
+    animation-timeline: scroll();
+    animation-range:10px 350px ;
+}
+
+.header__nav-logo {
+    color: black;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-decoration: none;
+    position: fixed;
+    padding: 30px;
+    top: 0;
+    left: 10px;
+    z-index: 10; 
+    animation:header-animation-logo both;
+    animation-timeline: scroll();
+    animation-range:10px 350px ;
+}
+/* animaciones */
+@keyframes header-animation{
+    0%{
+        padding: 25px 5px;
+    }
+    100%{
+        height: 75px;
+        padding: 15px 20px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.896);
+    }
+}
+@keyframes header-animation-links{
+    from{
+        color: black;
+
+    }
+    to{
+        color: var(--color-oscuro0);
+        
+    }
+}
+@keyframes header-animation-logo{
+    from{
+        color: black;
+        font-size: 1.7em;
+    }
+    to{
+        color: var(--color-oscuro0);
+        font-size: 1.6em;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+
+/* panel de busqueda cambiar nombres */
+
+/*primer div del main: MAIN-HEADER BACKGROUND (con panel de busqueda)*/
+.main__background{
+    display: flex;
+    background-image:linear-gradient(transparent, #1115) ,url(https://3.bp.blogspot.com/-GbEmr2LjrHI/TwPOcGThY6I/AAAAAAAACKE/IbzrjAeXw-8/s1600/176.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100vw;
+}
+.main__background__panel-bg{
+    position: relative;
+    top: 200px;
+    margin-left: 210px;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    width: 1000px;
+   
+}
+.main__background__panel{
+    margin: auto;
+    padding: 45px 10px;
+    width: 800px;
+}
+.main__background__panel__select{
+    margin: -3px;
+    border: none;
+    height: 40px;
+    width: 200px;
+}
+.main__background__panel__button{
+    margin: 0;
+    padding: 12px 50px;
+    color: white;
+    text-decoration: none;
+    background-color: var(--color-oscuro1);
+}
+
+
+/* ----- FIN HEADER ----- */
+
+/* ----- MAIN INDEX ----- */
+.main-container{
+    margin-top: 400px;
+    height: auto;
+    width: 100vw;
+}
+
+
+/* segundo div del main: MAIN (con la seccion de articulos) */
+.main{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+.main__title{
+    text-align: center;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    opacity: .9;
+    color: var(--color-oscuro0);
+    padding: 30px;
+}
+/* index-articulos */
+.main__article{
+    height: auto;
+    width: 90vw;
+    margin: auto;
+    padding-bottom: 60px;
+   
+}
+.main__article > h2{
+    text-align: center;
+    font-size: 1.29rem;
+    padding: 30px;
+    border-bottom: 1px solid #999;
+}
+
+/* galeria */
+.galery{
+    height: 800px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+
+.container-card{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 330px;
+    border: 2px solid var(--color-oscuro0);
+    border-top: none;
+    border-radius: 10px;
+
+}
+.container-card__info{
+    padding-top: 15px;
+    color: var(--color-oscuro0);
+    background-color: white;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: start;
+    text-indent: 10px;
+    line-height: 1.3;
+}
+.container-card__figure{
+    position: relative;
+    height: 330px;
+    width: 330px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.container-card__figure-imagen{
+    width: 100%;
+    height: 100%;
+    
+    transition: all 500ms ease-out;
+}
+.container-card__figure-capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1,1,1,0.4);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+
+}
+.container-card__figure-capa h2{
+    color: white;
+    margin-top: 200px;
+    font-weight: 400;
+    margin-top: 220px;
+    transition: all 500ms ease-out;
+
+}
+
+
+/* animaciones de la galeria */
+
+
+.container-card__figure:hover > .container-card__figure-capa{
+    opacity: 1;
+    visibility: visible;
+}
+.container-card__figure:hover > .container-card__figure-capa h2{
+    margin-top: 120px;
+}
+.container-card__figure:hover > .container-card__figure-imagen{
+    transform: scale(1.2);
+}
+
+
+
+
+/* ----- FIN MAIN INDEX ----- */
+
+/* -----  INICIO FOOTER ----- */
+
+.footer{
+    background-color: #111;
+    height: auto;
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+}
+
+.footer__us {
+    width: 60vw;
+    color: gray;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.footer__info {
+    padding-top: 30px;
+    padding-right: 50px;
+    line-height: 2rem;
+    text-wrap: pretty;
+    width: 40vw;
+    color: gray;
+    text-align: start;
+}
+
