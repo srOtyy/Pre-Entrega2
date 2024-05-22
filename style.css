@@ -85,14 +85,62 @@ body {
     animation-timeline: scroll();
     animation-range: 10px 350px;
 }
+/* INICIO panel de busqueda */
+
+.main__background {
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100vw;
+}
+
+.main__background__panel-bg {
+    position: relative;
+    top: 30vh;
+    margin-left: 15vw;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main__background__panel {
+    margin: auto;
+    padding: 45px 10px;
+    width: 800px;
+}
+
+.main__background__panel__select {
+    margin: -3px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    transition: all 500ms ease-out;
+
+}
+
+.main__background__panel__button {
+    padding: 12px 50px;
+    color: white;
+    text-decoration: none;
+    background-color: var(--color-oscuro1);
+    transition: all 500ms ease-out;
+}
+
+
 
 @media screen and (max-width:320px) {
-   
+   /* header */
     .header__background{
         background-image: url(fondo_mobile.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        width: 100vw;
     }
     .header__nav{
         font-size: 1em;
@@ -103,11 +151,32 @@ body {
 
     }
     .header__nav-logo{
-        
-        margin: auto;
+        width: 100vw;
+        text-align: center;
     }
     .header__nav-list{
         justify-content: space-around;
-        margin-left: 10%;
+        margin:auto;
     }
+    .header__nav-list-link{
+        font-size: .9em;
+    }
+    /* panel  */
+    .main__background__panel-bg{
+        width: 35vw;
+        flex-direction: row;
+        margin: auto;
+    }
+    .main__background__panel{
+        padding: 0;
+        height: auto;
+    }
+    .main__background__panel__select{
+        margin-bottom: 20px;
+    }
+    .main__background__panel__button{
+        margin-left: 12%;
+        padding-top: 10px;
+    }
+
 }
