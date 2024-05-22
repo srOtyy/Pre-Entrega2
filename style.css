@@ -33,7 +33,7 @@ body{
     background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(2px);
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     z-index: 10;
     display: flex;
@@ -46,8 +46,12 @@ body{
     animation-range:10px 350px ;
     
 }
-
-.header__nav-link{
+.header__nav-list{
+    display: flex;
+    gap: 40px;
+    padding-right: 30px;
+}
+.header__nav-list-link{
     color: black;
     font-weight: 400;
     text-decoration: none;
@@ -105,6 +109,19 @@ body{
         padding-bottom: 40px;
     }
 }
+/* media- query */
+@media screen and (max-width: 768px){
+    .header__nav{
+        font-size: 0.8em;
+        justify-content: end;
+        height: 85px;
+    }
+    .header__nav-list{
+        padding-right: 30px;
+    }
+
+    
+}
 
 
 /* panel de busqueda cambiar nombres */
@@ -112,7 +129,6 @@ body{
 /*primer div del main: MAIN-HEADER BACKGROUND (con panel de busqueda)*/
 .main__background{
     display: flex;
-    background-image:linear-gradient(transparent, #1115) ,url(https://3.bp.blogspot.com/-GbEmr2LjrHI/TwPOcGThY6I/AAAAAAAACKE/IbzrjAeXw-8/s1600/176.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,6 +142,8 @@ body{
     padding: 10px;
     backdrop-filter: blur(2px);
     width: 1000px;
+    display: flex;
+    justify-content: center;
    
 }
 .main__background__panel{
@@ -146,8 +164,25 @@ body{
     text-decoration: none;
     background-color: var(--color-oscuro1);
 }
-
-
+@media screen and (max-width:768px){
+    .main__background__panel-bg{
+        margin-left: 15%;
+    }
+    .main__background__panel__select{
+        width: 300px;
+    }
+    .main__background__panel{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        height: auto;
+    }
+    .main__background__panel__button{
+        text-align: center;
+        width: 300px;
+    }
+    
+}
 /* ----- FIN HEADER ----- */
 
 /* ----- MAIN INDEX ----- */
