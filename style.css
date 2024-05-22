@@ -11,6 +11,8 @@
 
 }
 body{
+    display: flex;
+    flex-direction: column;
     font-family: sans-serif;
     background-color: rgb(230, 225, 225);
     margin:0;
@@ -109,7 +111,7 @@ body{
         padding-bottom: 40px;
     }
 }
-/* media- query */
+/* media- query  heather*/
 @media screen and (max-width: 768px){
     .header__nav{
         font-size: 0.8em;
@@ -164,6 +166,8 @@ body{
     text-decoration: none;
     background-color: var(--color-oscuro1);
 }
+
+/* media del panel de busqueda */
 @media screen and (max-width:768px){
     .main__background__panel-bg{
         margin-left: 15%;
@@ -192,14 +196,23 @@ body{
     width: 100vw;
 }
 
+/* media del main */
+@media screen and ( max-width: 768px){
+    .main-container{
+        margin-top: 201px;
+
+    }
+}
 
 /* segundo div del main: MAIN (con la seccion de articulos) */
 .main{
+    position: relative;
     height: auto;
     width: 100vw;
     display: flex;
     flex-direction: column;
     padding-bottom: 60px;
+    flex: 1;
 }
 .main__title{
     text-align: center;
@@ -209,7 +222,9 @@ body{
     color: var(--color-oscuro0);
     padding: 30px;
 }
-/* index-articulos */
+
+
+/* index- contenedor de galeria (article) */
 .main__article{
     height: auto;
     width: 90vw;
@@ -233,7 +248,6 @@ body{
     flex-flow: row wrap;
     gap: 40px;
 }
-
 
 .container-card{
     margin-top: 50px;
@@ -298,7 +312,25 @@ body{
 
 }
 
+/* media query de la galeria */
+@media screen and (max-width:768px){
+    .galery{
+       flex-direction: row; /*  por que row funciona como uan fila??*/
 
+    }
+    .container-card{
+        margin: auto;
+        margin-top: 8%;
+        width: 70vw;
+    }
+    .container-card__figure{
+        width: 70vw;
+    }
+    .container-card__info{
+        text-align: center;
+        font-size: 1em;
+    }
+}
 /* animaciones de la galeria */
 
 
@@ -349,3 +381,4 @@ body{
     text-align: start;
 }
 
+/* media query footer */
