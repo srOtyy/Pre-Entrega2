@@ -131,7 +131,7 @@ body {
     transition: all 500ms ease-out;
 }
 
-/* -----------------INICIO Main ----------------- */
+/* -----------------INICIO Main (index) ----------------- */
 
 /* 2.a) Main ( container ) */
 .main {
@@ -316,8 +316,8 @@ body {
         text-align: center;
     }
     .header__nav-list{
-        justify-content: space-around;
-        margin:auto;
+        justify-content: space-evenly;
+        margin-left: 18vw;
     }
     .header__nav-list-link{
         font-size: .9em;
