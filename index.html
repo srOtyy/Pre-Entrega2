@@ -24,33 +24,38 @@
         </nav> 
     
             <!-- Panel de busqueda  -->
-        <div    class="main__background__panel-bg">
-            <div    class="main__background__panel">
-                <select     class="main__background__panel__select">
+        <div    class="header__background__panel-bg">
+            <div    class="header__background__panel">
+                <select     class="header__background__panel__select">
                     <option>Tipo de propiedad</option>
                     <option>Casa</option>
                     <option>Departamento</option>
                     <option>Chalet</option>
                 </select>
-                <select     class="main__background__panel__select">
+                <select     class="header__background__panel__select">
                     <option>Hambientes</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                 </select>
-                <select     class="main__background__panel__select">
+                <select     class="header__background__panel__select">
                     <option>Localidad</option>
                     <option>Localidad1</option>
                     <option>Localidad2</option>
                     <option>Localidad3</option>
                 </select>
-                <a href="buscador.html"     class="main__background__panel__button">Buscar</a>
+                <a href="buscador.html"     class="header__background__panel__button">Buscar</a>
             </div>
         </div>
 
     </header>
     <main>
-        <div    class="main-container">
+        <!-- main-container = container-main
+            main__article = main__galery
+            galery = main__galery__articles 
+            container-card == article__card...
+            -->
+        <div    class="container-main">
 
             <div    class="main">
 
@@ -59,96 +64,121 @@
                 </div>
                 
                 <!-- Galeria de imagenes -->
-                <div    class="main__article">
+                <div    class="main__galery">
                 
                     <h2> ⭐ Propiedades Destacadas ⭐</h2>
 
-                    <div    class="galery">
+                    <div    class="main__galery__articles">
 
-                        <div    class="container-card">
+                        <div    class="article__card">
                     
-                            <figure class="container-card__figure">
-                                <img src="imagenes/Casas/casa1.jpg" class="container-card__figure-imagen">
-                                    <div    class="container-card__figure-capa">
+                            <figure class="article__card__figure">
+                                <img src="imagenes/Casas/casa1.jpg" class="article__card__figure-imagen">
+                                    <div    class="article__card__figure-capa">
                                         <h2  class="titulo-imagen"> Precio: $1234</h2>
                                     </div>
                             </figure>
-                            <div class="container-card__info">
-                                <h3>Ambientes:4</h3>
-                                <h3>Localidad:B</h3>
+                            <div class="article__card__info">
+                                <div class="article__card__info-flex">
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                </div>
+                                <h3 class="article__card__info-precio">Precio:$1234</h3>
                             </div>
-                            
                         </div>
-                        <div    class="container-card">
+                        <div    class="article__card">
                     
-                            <figure class="container-card__figure">
-                                <img src="imagenes/Casas/casa2.jpg" class="container-card__figure-imagen">
-                                    <div    class="container-card__figure-capa">
+                            <figure class="article__card__figure">
+                                <img src="imagenes/Casas/casa2.jpg" class="article__card__figure-imagen">
+                                    <div    class="article__card__figure-capa">
                                         <h2  class="titulo-imagen"> Precio: $1234</h2>
                                     </div>
                             </figure>
-                            <div class="container-card__info">
-                                <h3>Ambientes:4</h3>
-                                <h3>Localidad:B</h3>
+                            <div class="article__card__info">
+                                <div class="article__card__info-flex">
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                </div>
+                                <h3 class="article__card__info-precio">Precio:$1234</h3>
                             </div>
-                            
                         </div>
-                        <div    class="container-card">
+                        <div    class="article__card">
                     
-                            <figure class="container-card__figure">
-                                <img src="imagenes/Casas/casa3.jpg" class="container-card__figure-imagen">
-                                    <div    class="container-card__figure-capa">
+                            <figure class="article__card__figure">
+                                <img src="imagenes/Casas/casa3.jpg" class="article__card__figure-imagen">
+                                    <div    class="article__card__figure-capa">
                                         <h2  class="titulo-imagen"> Precio: $1234</h2>
                                     </div>
                             </figure>
-                            <div class="container-card__info">
-                                <h3>Ambientes:4</h3>
-                                <h3>Localidad:B</h3>
+                            <div class="article__card__info">
+                                <div class="article__card__info-flex">
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                </div>
+                                <h3 class="article__card__info-precio">Precio:$1234</h3>
                             </div>
-                            
                         </div>
-                        <div    class="container-card">
+                        <div    class="article__card">
                     
-                            <figure class="container-card__figure">
-                                <img src="imagenes/Casas/casa4.jpg" class="container-card__figure-imagen">
-                                    <div    class="container-card__figure-capa">
+                            <figure class="article__card__figure">
+                                <img src="imagenes/Casas/casa4.jpg" class="article__card__figure-imagen">
+                                    <div    class="article__card__figure-capa">
                                         <h2  class="titulo-imagen"> Precio: $1234</h2>
                                     </div>
                             </figure>
-                            <div class="container-card__info">
-                                <h3>Ambientes:4</h3>
-                                <h3>Localidad:B</h3>
+                            <div class="article__card__info">
+                                <div class="article__card__info-flex">
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                </div>
+                                <h3 class="article__card__info-precio">Precio:$1234</h3>
                             </div>
-                            
                         </div>
-                        <div    class="container-card">
+                        <div    class="article__card">
                     
-                            <figure class="container-card__figure">
-                                <img src="imagenes/Casas/casa5.jpg" class="container-card__figure-imagen">
-                                    <div    class="container-card__figure-capa">
+                            <figure class="article__card__figure">
+                                <img src="imagenes/Casas/casa5.jpg" class="article__card__figure-imagen">
+                                    <div    class="article__card__figure-capa">
                                         <h2  class="titulo-imagen"> Precio: $1234</h2>
                                     </div>
                             </figure>
-                            <div class="container-card__info">
-                                <h3>Ambientes:4</h3>
-                                <h3>Localidad:B</h3>
+                            <div class="article__card__info">
+                                <div class="article__card__info-flex">
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                </div>
+                                <h3 class="article__card__info-precio">Precio:$1234</h3>
                             </div>
-                            
                         </div>
-                        <div    class="container-card">
+                        <div    class="article__card">
                     
-                            <figure class="container-card__figure">
-                                <img src="imagenes/Casas/casa6.jpg" class="container-card__figure-imagen">
-                                    <div    class="container-card__figure-capa">
+                            <figure class="article__card__figure">
+                                <img src="imagenes/Casas/casa6.jpg" class="article__card__figure-imagen">
+                                    <div    class="article__card__figure-capa">
                                         <h2  class="titulo-imagen"> Precio: $1234</h2>
                                     </div>
                             </figure>
-                            <div class="container-card__info">
-                                <h3>Ambientes:4</h3>
-                                <h3>Localidad:B</h3>
+                            <div class="article__card__info">
+                                <div class="article__card__info-flex">
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                    <h3>Ambientes:4</h3>
+                                    <h3>Localidad:B</h3>
+                                </div>
+                                <h3 class="article__card__info-precio">Precio:$1234</h3>
                             </div>
-                            
                         </div>
+                        
                         
                         
                 </div>
