@@ -131,6 +131,8 @@ body {
     transition: all 500ms ease-out;
 }
 
+/* -----------------INICIO Main ----------------- */
+
 /* 2.a) Main ( container ) */
 .main {
     flex: 1;
@@ -239,9 +241,42 @@ body {
     margin-top: 220px;
     transition: all 500ms ease-out;
 }
+/* -----------------INICIO Footer----------------- */
+.footer {
+    background-color: #111;
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.footer__us {
+    font-size: inherit;
+    width: 60vw;
+    color: gray;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.footer__info {
+    font-size: inherit;
+    padding-top: 30px;
+    padding-right: 50px;
+    line-height: 2rem;
+    text-wrap: pretty;
+    width: 40vw;
+    color: gray;
+    text-align: center;
+    text-wrap: balance;
+
+}
 
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:330px) {
    /* header */
     .header__background{
         background-image: url(fondo_mobile.jpg);
@@ -302,6 +337,7 @@ body {
         font-size: 1.36em;
     }
     .galery{
+        gap: 8px;
         margin: 0;
     }
     .container-card{
@@ -316,6 +352,24 @@ body {
     .container-card__info{
         text-align: center;
         font-size: 1.2em;
+    }
+    /* footer */
+    .footer{
+        flex-direction: column;
+        font-size: .7em;
+        align-items: center;
+    }
+    .footer__us{
+        width: auto;
+
+    }
+    .footer__info{
+        font-size: 1.2em;
+        line-height: 1.2em;
+        padding: 20px;
+        padding-top: 40px;
+        width: auto;
+
     }
 
 
