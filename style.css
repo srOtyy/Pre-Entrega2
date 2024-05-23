@@ -27,7 +27,7 @@ body {
 /* ---------INICIO Header--------- */
 .header__background {
     position: absolute;
-    background-image: url(fondo.jpg);
+    background-image: url(imagenes/fondo.jpg);
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,6 +259,7 @@ body {
     margin-top: 220px;
     transition: all 500ms ease-out;
 }
+
 /* -----------------INICIO Footer----------------- */
 .footer {
     background-color: #111;
@@ -293,11 +294,76 @@ body {
 
 }
 
+/* ----- INICIO CONTACTO ----- */
+.contacto-container{
+    height: auto;
+    background-color: white;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.contacto-container__bg{
+    margin-top: 90px;
+    background-image:url(imagenes/fondo_contacto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
+    width: 90vw;
+
+}
+.contacto-container__box{
+    display: flex;
+    background-color: white;
+    padding: 90px 20px;
+    height: 550px;
+    width: 90vw;
+}
+.contacto-container__box__image{
+    width: 40vw;
+    height: 350px;
+    border-radius: 2000px;
+    border: 1px solid black;
+    background-image: url(imagenes/gato_grande.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.contacto-container__box__div{
+    width: 60vw;
+    height: 350px;
+}
+.contacto-container__box__div > h2{
+    padding-left: 25vw;
+    color: #222;
+}
+.contacto-container__box__div__form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    gap: 15px;
+
+}
+.contacto-container__box__div__form__input{
+    margin: auto;
+    margin-right: 10px;
+    height: 30px;
+    width:55%;
+}
+.input-msg{
+    height: 100px;
+}
+.input-sumbit{
+    width: 30%;
+}
+
+/* ----- FIN CONTACTO ----- */
 
 @media screen and (max-width:330px) {
    /* header */
     .header__background{
-        background-image: url(fondo_mobile.jpg);
+        background-image: url(imagenes/fondo_mobile.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -403,6 +469,29 @@ body {
         width: auto;
 
     }
-
+    /* contacto */
+    .contacto-container__bg{
+        background-image: url(imagenes/fondo_contacto_moble.png);
+        width: 90vw;
+        height: 112px;
+    }
+    .contacto-container__box{
+        flex-direction: column;
+    }
+    .contacto-container__box__image{
+       display: none;
+    }
+    .contacto-container__box__div{
+        width: 100vw;
+    }
+    .contacto-container__box__div__form__input{
+        margin: 0;
+        width: 70vw;
+    }
+    .contacto-container__box__div > h2{
+        padding: 0;
+        width: 80vw;
+        text-align: center;
+    }
 
 }
