@@ -93,7 +93,7 @@ body {
 .header__background__panel-bg {
     position: relative;
     top: 30vh;
-    margin-left: 15vw;
+    margin: auto;
     padding: 10px;
     backdrop-filter: blur(2px);
     width: 1000px;
@@ -138,7 +138,7 @@ body {
 }
 .container-main {
     flex: 1;
-    margin-top: 52vh;
+    margin-top: 40vh;
     width: 100vw;
 }
 .main__title {
@@ -408,7 +408,7 @@ body {
     /* main */
     .container-main{
         margin: auto;
-        margin-top: 32vh;
+        margin-top: 29vh;
         font-size: .65em;
     }
     .main__title{
@@ -424,6 +424,7 @@ body {
     .main__galery__articles{
         gap: 8px;
         justify-content: center;
+        gap: 6%;
 
     }
     .article__card{
