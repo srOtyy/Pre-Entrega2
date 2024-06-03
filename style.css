@@ -356,7 +356,7 @@ body {
 
 /* Media Querys */
 
-@media screen and (max-width:330px) {
+@media screen and (max-width:1150px) {
    /* header */
     .header__background{
         background-image: url(imagenes/fondo_mobile.jpg);
@@ -379,7 +379,7 @@ body {
     }
     .header__nav-list{
         justify-content: space-evenly;
-        margin-left: 18vw;
+        margin: auto;
     }
     .header__nav-list-link{
         font-size: .9em;
@@ -392,6 +392,10 @@ body {
         margin-top: -20px;
     }
     .header__background__panel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 0;
         height: auto;
     }
@@ -399,7 +403,6 @@ body {
         margin-bottom: 20px;
     }
     .header__background__panel__button{
-        margin-left: 12%;
         padding-top: 10px;
     }
     /* main */
@@ -420,7 +423,8 @@ body {
     }
     .main__galery__articles{
         gap: 8px;
-        margin: 0;
+        justify-content: center;
+
     }
     .article__card{
         width: 280px;
