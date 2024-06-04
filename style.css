@@ -68,7 +68,7 @@ body {
 
 
 /* INICIO background  */
-.header__background {
+.main__background {
     position: relative;
     top: 0;
     background-image: url(imagenes/fondo.jpg);
@@ -82,7 +82,7 @@ body {
 }
 
 /* INICIO panel de busqueda */
-.header__background__panel-bg {
+.main__background__panel-bg {
     position: relative;
     top: 180px;
     margin: auto;
@@ -94,13 +94,13 @@ body {
     justify-content: center;
 }
 
-.header__background__panel {
+.main__background__panel {
     margin: auto;
     padding: 45px 10px;
     width: 800px;
 }
 
-.header__background__panel__select {
+.main__background__panel__select {
     margin: -3px;
     border: none;
     height: 40px;
@@ -109,7 +109,7 @@ body {
 
 }
 
-.header__background__panel__button {
+.main__background__panel__button {
     padding: 12px 50px;
     color: white;
     text-decoration: none;
@@ -374,7 +374,7 @@ body {
         font-size: .9em;
     }
     /* background */
-    .header__background{
+    .main__background{
         background-image: url(imagenes/fondo_mobile.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -383,13 +383,13 @@ body {
         width: 100vw;
     }
     /* panel  */
-    .header__background__panel-bg{
+    .main__background__panel-bg{
         width: 35vw;
         top: 110px;
         flex-direction: row;
         margin: auto;
     }
-    .header__background__panel{
+    .main__background__panel{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -397,10 +397,10 @@ body {
         padding: 0;
         height: auto;
     }
-    .header__background__panel__select{
+    .main__background__panel__select{
         margin-bottom: 20px;
     }
-    .header__background__panel__button{
+    .main__background__panel__button{
         padding-top: 10px;
     }
     /* main */
