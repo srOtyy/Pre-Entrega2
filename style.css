@@ -173,7 +173,8 @@ body {
     margin: auto;
     display: flex;
     flex-flow: row wrap;
-    gap: 40px;
+    justify-content: center;
+    gap: 50px;
 }
 
 .article__card {
@@ -359,7 +360,7 @@ body {
 
 /* Media Querys */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:999px) {
    /* header */
     .header__background{
         background-image: url(imagenes/fondo_mobile.jpg);
