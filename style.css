@@ -25,22 +25,7 @@ body {
 }
 
 /* ---------INICIO Header--------- */
-.header{
-    height: 80vh;
-}
-.header__background {
-    position: absolute;
-    background-image: url(imagenes/fondo.jpg);
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    height: auto;
-    width: 100vw;
-    z-index: 0;
-    opacity: 0.9;
-}
+
 
 .header__nav {
     position: fixed;
@@ -62,7 +47,6 @@ body {
 .header__nav-list {
     display: flex;
     gap: 40px;
-    padding-right: 30px;
 }
 
 .header__nav-list-link {
@@ -78,24 +62,29 @@ body {
     font-size: inherit;
     font-weight: 600;
     text-decoration: none;
-    padding: 10px;
-    padding-top: 0;
+  
 
 }
-/* INICIO panel de busqueda */
 
+
+/* INICIO background  */
 .header__background {
-    display: flex;
-    background-position: center;
+    position: relative;
+    top: 0;
+    background-image: url(imagenes/fondo.jpg);
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    z-index: 0;
+    opacity: 0.9;
+    height: 70vh;
     width: 100vw;
 }
 
+/* INICIO panel de busqueda */
 .header__background__panel-bg {
     position: relative;
-    top: 25vh;
+    top: 180px;
     margin: auto;
     padding: 10px;
     backdrop-filter: blur(2px);
@@ -131,18 +120,11 @@ body {
 /* -----------------INICIO Main (index) ----------------- */
 
 /* 2.a) Main ( container ) */
-.main {
-    flex: 1;
-    position: relative;
-    width: 100vw;
+
+.container-main {
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
-}
-.container-main {
-    flex: 1;
-    margin-top: 46vh;
-    width: 100vw;
+    width: 100%;
 }
 .main__title {
     text-align: center;
@@ -154,6 +136,16 @@ body {
     padding: 30px;
 }
 /* 2.b) Main (Galeria de imagenes) */
+.main {
+    flex: 1;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+
+}
+
 
 .main__galery {
     width: 90vw;
@@ -362,14 +354,6 @@ body {
 
 @media screen and (max-width:999px) {
    /* header */
-    .header__background{
-        background-image: url(imagenes/fondo_mobile.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 48%;
-        width: 100vw;
-    }
     .header__nav{
         font-size: 1em;
         flex-direction: column;
@@ -389,12 +373,21 @@ body {
     .header__nav-list-link{
         font-size: .9em;
     }
+    /* background */
+    .header__background{
+        background-image: url(imagenes/fondo_mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        width: 100vw;
+    }
     /* panel  */
     .header__background__panel-bg{
         width: 35vw;
+        top: 110px;
         flex-direction: row;
         margin: auto;
-        margin-top: -20px;
     }
     .header__background__panel{
         display: flex;
@@ -411,9 +404,9 @@ body {
         padding-top: 10px;
     }
     /* main */
+   
     .container-main{
         margin: auto;
-        margin-top: 29vh;
         font-size: .65em;
     }
     .main__title{
