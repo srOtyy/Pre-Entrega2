@@ -32,13 +32,13 @@ body {
     background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(2px);
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    padding: 30px 40px;
+    padding: 30px 20px;
     font-family: helvetica;
     font-size: 1.7em;
 
@@ -78,7 +78,8 @@ body {
     z-index: 0;
     opacity: 0.9;
     height: 70vh;
-    width: 100vw;
+    width: 100%;
+
 }
 
 /* INICIO panel de busqueda */
@@ -139,7 +140,7 @@ body {
 .main {
     flex: 1;
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 60px;
@@ -248,7 +249,8 @@ body {
 /* -----------------INICIO Footer----------------- */
 .footer {
     background-color: #111;
-    width: 100vw;
+    width: 100%;
+
     padding: 15px;
     display: flex;
     flex-direction:row ;
